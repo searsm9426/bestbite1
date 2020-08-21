@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Universal Styles */
+
+html {
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .btn.active {
+    color: white;
+    background-color: red;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  }
+  
+  /* Header */
+  
+  .header {
+    padding: 40px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    float: left;
+    margin-bottom: 30px;
+  }
+  
+  .header ul {
+    float: right;
+    margin-top: 12px;
+  }
+  
+  .header li {
+    display: inline;
+    margin-left: 30px;
+  }
+  
+  .header li:first-child {
+    margin-left: 0;
+  }
+  
+  .header ul li a {
+    color: #cc0000;
+  }
+  
+  /* Jumbotron */
+  
+  .jumbotron {
+    clear: both;
+    padding: 200px 60px;
+    background: url("https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg") no-repeat center center;
+    background-size: cover; 
+    text-align: center;
+  }
+  
+  .jumbotron h2 {
+    color: white;
+    font-size: 60px;
+    line-height: 1.1;
+  }
+  
+  .jumbotron .btn {
+    background-color: firebrick;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    color: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px 50px;
+  }
+  
+  /* Contributions */
+  
+  .contributions {
+    text-align: center;
+    padding-top: 80px;
+    margin: 0 60px;
+  }
+  
+  .contributions h3 {
+    margin-bottom: 9px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .contributions h4 {
+    margin: 150px auto;
+    font-size: 20px;
+  }
+
+  .contributions h4 a {
+      color: #fff;
+      width: 50%;
+      padding: 20px 0;
+      background-color: #cc0000;
+      display: block;
+      margin: 0 auto;
+      border-radius: 6px;
+  }
+  
+  .meals {
+    padding-top: 20px;
+  }
+  
+  .meal{
+    width: calc(33.3% - 80px);
+    float: left;
+    padding: 0 20px;
+    margin: 0 20px 80px;
+  }
+  
+  .meal ul {
+    line-height: 1.4;
+  }
+
+  .breakfast {
+      background: url('breakfast.jpg') no-repeat center center;
+      background-size: cover;
+  }
+
+  .dinner {
+        background: url('dinner.jpg') no-repeat center center;
+        background-size: cover;
+  }
+
+  .dessert {
+    background: url('dessert.jpg') no-repeat center center;
+    background-size: cover;
+}
+  
+  /* Footer */
+  
+  footer {
+    clear: both;
+    padding: 40px 15px;
+    margin-top: 80px;
+    background-color: #eee;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+@media screen and (max-width:950px){
+.meal {
+	width: calc(100%-80px);
+}
+}
+
+@media screen and (max-width:680px){
+.header h1 {
+	text-align: center;
+	float: none;
+}
+.header ul {
+	float: none;
+	text-align: center;
+}
+}
